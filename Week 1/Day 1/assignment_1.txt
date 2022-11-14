@@ -1,0 +1,34 @@
+							                                          ASSIGNMENT 1(WEEK 1, DAY 1)
+
+
+
+1.	What is JSON??
+JSON is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of 
+attribute–value pairs and arrays (or other serializable values).
+
+
+2.	What is http status code?
+HTTP status code is used for search engine optimization of how your pages get indexed, as well as how search engines perceive the health of your site.
+
+
+3.	What is the meaning of 500 status code?
+The 500 Status code "internal server error" is just that - it's an error on the server-side. This means that the server encountered something unexpected 
+that prevented it from fulfilling the request. In some ways, it’s an ambiguous error. The server doesn’t know exactly what’s wrong, but it knows something 
+is wrong.
+
+
+4.	What is no SQL database?
+NoSQL can be defined as an approach to database designing, which holds a vast diversity of data such as key-value, multimedia, document, columnar, graph 
+formats, external files, etc. NoSQL is purposefully developed for handling specific data models having flexible schemas to build modern applications. NoSQL 
+is famous for its high functionality, ease of development with a performance at scale. Because of such diverse data handling feature, NoSQL is called a 
+non-relational database. Some famous examples are MongoDB, Neo4J, HyperGraphDB, etc.
+
+
+5.	What is IIS?
+Internet Information Services (IIS) is a flexible, general-purpose web server from Microsoft that runs on Windows systems to serve requested HTML pages or 
+files. An IIS web server accepts requests from remote client computers and returns the appropriate response. This basic functionality allows web servers to 
+share and deliver information across local area networks (LAN), such as corporate intranets, and wide area networks (WAN), such as the Internet.
+
+
+
+
