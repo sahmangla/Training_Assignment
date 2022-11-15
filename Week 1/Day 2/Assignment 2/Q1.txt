@@ -1,0 +1,22 @@
+1. How to apply style to first letter of the paragraph?
+In order to apply style only on the first element, we can use the <span> tag i.e an inline element so that there won't be any
+line break in between and we can style the part or one word of the text in the paragraph by choosing the element span in CSS 
+file. 
+For eg:
+  
+ HTML FILE
+
+	<p>
+        <span>L</span>orem ipsum dolor sit amet consectetur adipisicing elit.
+  	</p>
+
+
+CSS FILE
+
+	span{
+            font-style:bold;
+            font-style:italic;
+            color:red;
+            background-color: yellow;
+            font-size:100px;
+        }
