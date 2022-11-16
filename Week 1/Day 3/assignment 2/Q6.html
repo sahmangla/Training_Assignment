@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            background-color:aquamarine ;
+            width:50%;
+            margin:auto;
+            padding:20px;
+        }
+        #first{
+            background-color:blue;
+            color:white;
+            padding:10px;
+            margin:5px;     
+        }
+        .part{
+            width: auto;
+            float:left;
+            margin:20px;
+            
+        }
+        #small{
+            font-size: 8px;
+        }
+    </style>
+>
+    
+</head>
+<body>
+    <div id="container">
+        <form>
+        <div style="border:2px solid black;padding:5px;padding-bottom: 0%;background-color: whitesmoke;">
+            
+        <div id="first">
+            <img src="https://cdn3.iconfinder.com/data/icons/money-and-credit-card/100/money_pay_payment_dollar-03-512.png" alt="secured" height="30" width="30">
+            <span>This is a secure 128-bit SSL. Encrypted payment. You're safe.</span>
+        </div> 
+                <input type="radio" name="c" value="credit card">
+                <label>Credit Card (Visa, Mastercard) <img style="margin:0px 3px"src="https://img.icons8.com/color/2x/visa.png" alt="Visa" height="30" width="30"><img style="margin:0px 3px"src="https://img.icons8.com/fluency/2x/mastercard-credit-card.png" alt="Mastercard" height="30" width="30"></label>
+                <input type="radio" name="c" value="pay pal">
+                <label>PayPal <img src="https://img.icons8.com/ios-filled/512/paypal.png" alt="PayPal" height="20" width="20"></label>
+                <br><br>
+                <label>Card Number <span id="small">The 16 digits on front of your card</span></label>
+                <br>
+                <input style="width:98.5%;padding: 3px;" type="text" name="c1">
+                <br>
+                
+                <div class="part">
+                <label>Expiration date</label>
+                <br>
+                <select style="padding:3px">
+                    <option selected>Month</option>
+                    <option value="January">Jan</option>
+                    <option value="February">Feb</option>
+                    <option value="March">Mar</option>
+                    <option value="April">Apr</option>
+                    <option value="May">May</option>
+                    <option value="June">Jun</option>
+                    <option value="July">Jul</option>
+                    <option value="August">Aug</option>
+                    <option value="September">Sep</option>
+                    <option value="October">Oct</option>
+                    <option value="November">Nov</option>
+                    <option value="December">Dec</option>
+                    <option value="January">Jan</option>
+                </select>
+                <label style="font-size:29px">/</label>
+                <select style="padding:3px">
+                    <option selected>Year</option>
+                    <option value="2022">2022</option>
+                    <option value="2022">2023</option>
+                    <option value="2022">2024</option>
+                    <option value="2022">2025</option>
+                    <option value="2022">2026</option>
+                    <option value="2022">2027</option>
+                    <option value="2022">2028</option>
+                    <option value="2022">2028</option>
+                    <option value="2022">2029</option>
+                    <option value="2022">2030</option>
+                    <option value="2022">2031</option>
+                    <option value="2022">2032</option>
+                    <option value="2022">2033</option>
+                    <option value="2022">2034</option>
+                    <option value="2022">2035</option>
+                    <option value="2022">2036</option>
+                    <option value="2022">2037</option>
+                    <option value="2022">2038</option>
+                </select>
+                </div>
+                <div style="margin-right: 0%"class="part">
+                    <label>CVV2/CVC2</label>
+                    <br>
+                    <input style="padding:3px" type="password" name="password">
+                </div>
+                <div class="part" style="width:auto;line-height:0.6;margin-left: 2px">
+                    <br><br>
+                    <span style="font-size:10px">The last 3 digits displayed <br>on the back of your card</span>
+                    
+                </div>
+              <p style="clear:left;"></p>
+               <br>
+               <label>Full Name on a Card</label>
+               <br>
+               <input type="text" name="fullname" style="width:98.5%">
+               <div style="background-color:gray;padding:5px;margin-top: 10px;margin-bottom: 0px;text-align: center;">
+               <p >You will be charged $29.00 every month</p>
+               </div>
+                </div>
+           
+                <br>
+                <div style="width:33%;margin:auto;padding:10px">
+                <input style="background-color:blue; color:white;font-size: 20px; " type="submit" value="Complete Transaction">
+                </div>
+           
+    </form> 
+
+ </div>
+</body>
+</html>
