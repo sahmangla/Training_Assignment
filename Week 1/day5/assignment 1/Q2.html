@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="paint" width="300" height="300" style="border:1px solid black"></canvas>
+    
+    <script>
+        var canvaid=document.getElementById("paint");
+        var context_id=canvaid.getContext("2d");
+       // context_id.beginPath();
+        context_id.fillStyle="red";
+        var arr=[280,250,44,34,78,150,198];
+        var x=10,y=10,w=30;
+        for(var i=0;i<7;i++)
+        {
+            context_id.fillRect(x,300-arr[i],w, arr[i]);
+            x=x+40
+        }
+    
+    </script>
+</body>
+
+</html>
