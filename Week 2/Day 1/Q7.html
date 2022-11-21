@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      
+        *{
+            margin:0;
+        }
+        div{
+        text-align:center;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap:wrap;
+        }
+        img{
+                   
+            width:200px;
+            height:200px;
+            margin:5px;
+        }
+        figure{
+            border:1px solid black;
+        }
+        @media only screen and (max-width:700px)
+        {
+            figure{
+            margin:5px;
+           }
+           div{
+            background-color: pink;
+           }
+        }
+        @media only screen and (max-width:400px)
+        {
+           img{
+            
+            width:100px;
+            height:100px;
+           }
+           figure{
+            margin:10px;
+           }
+           div{
+            background-color: yellow;
+           }
+        }
+      
+
+    
+    </style>
+    
+</head>
+<body>
+    <div>
+        <figure>
+        <img src="https://th.bing.com/th/id/OIP.iwMVNNNnRo3CyiycD6erfQHaKC?w=143&h=194&c=7&r=0&o=5&dpr=1.5&pid=1.7" >
+        <figcaption>IMAGE 1</figcaption>
+    </figure>
+    <figure>
+        <img src="https://th.bing.com/th/id/OIP.OeOKEyU8sHeSThcUsPKS6QHaF2?w=246&h=194&c=7&r=0&o=5&dpr=1.5&pid=1.7" >
+        <figcaption>IMAGE 2</figcaption>
+    </figure>
+    <figure>
+        <img src="https://th.bing.com/th/id/OIP.XwdRaKpucw9GoQezyYA68gHaEK?w=331&h=187&c=7&r=0&o=5&dpr=1.5&pid=1.7" >
+        <figcaption>IMAGE 3</figcaption>
+    </figure>
+    <figure>
+        <img src="https://th.bing.com/th/id/OIP.K8D2lbfjxwK5Jhi-gj2jJQHaHG?w=195&h=187&c=7&r=0&o=5&dpr=1.5&pid=1.7" >
+        <figcaption>IMAGE 4</figcaption>
+    </figure>
+    <figure>
+        <img src="https://th.bing.com/th/id/OIP.Y8PQTGTi43E85alicnkOFwHaHq?w=184&h=191&c=7&r=0&o=5&dpr=1.5&pid=1.7" >
+        <figcaption>IMAGE 5</figcaption>
+    </figure>
+    <figure>
+        <img src="https://th.bing.com/th/id/OIP.nDS_qWBXMtUR0uuAcSHyNwHaGN?w=229&h=191&c=7&r=0&o=5&dpr=1.5&pid=1.7" >
+        <figcaption>IMAGE 6</figcaption>
+    </figure>
+    <figure>
+        <img src="https://th.bing.com/th/id/OIP.VpLR1Kn3sfATTmZSEgoJYgHaFF?w=241&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" >
+        <figcaption>IMAGE 7</figcaption>
+    </figure>    
+    </div>
+</body>
+</html>
