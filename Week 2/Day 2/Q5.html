@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            padding:10px;
+        }
+        *{
+            line-height: 1.5;
+            box-sizing: border-box;
+        }
+        input{
+            margin:5px;
+        }
+        .width{
+            width:100%;
+        }
+        .center::after{
+            content:"*";
+            color:red;
+        }
+        .bold{
+            font-weight: bold;
+        }
+        select{
+            padding:5px;
+        }
+        .btn{
+            background-color: blue;
+            color:white;
+            padding:5px;
+          
+        }
+        .btn:hover{
+            background-color: blueviolet;
+            cursor:pointer;
+            color:blanchedalmond;
+        }
+        .check:hover{
+            cursor: pointer;
+        }
+        input:hover,select:hover{
+
+        cursor:pointer;
+        background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 align="center">Bank Account Opening Form</h1>
+    
+    <hr>
+    <div style="width:40%;margin:auto;background-color:whitesmoke;  ">
+    <form autocomplete="off">
+        <fieldset>
+            <label class="center bold">Name on Account</label>
+            <br> 
+            <input type="text" class="width" placeholder="First Name" autofocus required>
+            <input type="text" class="width" placeholder="Middle Name">
+            <input type="text" class="width" placeholder="Last Name" required>
+            <br>
+            <br>
+            <label class="center bold">Account Number</label>
+            <input type="number" min="100000000000" max="999999999999" class="width" required>
+            <br>
+            <br>
+            <label class="bold">Account Type</label>
+            <br>
+            <input type="radio" value="Current account">Current Account<br>
+            <input type="radio" value="Savings account" >Savings Account<br>
+            <br>
+            <label class="center bold">Address</label>
+            <textarea rows="3" cols="100%" class="width" placeholder="Please Enter Full Address" required></textarea>
+            <input type="text" class="width" placeholder="City" required>
+            <input type="text" class="width" placeholder="State" required>
+            <input type="number" max="999999" min="100000" class="width" placeholder="Pincode" required>
+            <br>
+            <br>
+            <label class="bold">Occupation</label>
+            <select class="width">
+                <option value="Public Sector">Public Sector</option>
+                <option value="Private Sector" selected>Private Sector</option>
+                <option value="Other">Other</option>
+            </select>
+            <br>
+            <br>
+            <label class="center bold">Phone Number</label>
+            <select class="width " required>
+                <option value="Home" selected>Home</option>
+                <option value="Office">Office</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <input class="width" type="number" placeholder="Enter Mobile Number" min="1000000000" max="9999999999" required>
+            <br>
+            <br>
+            <input class="width bold btn" type="submit">
+            <br>
+            <br>
+            <input  type="checkbox" class="check" value="YES" required>
+            <label class="center">I agree to the terms & conditions</label>
+
+
+        </fieldset>
+    </form>
+</div>  
+</body>
+</html>

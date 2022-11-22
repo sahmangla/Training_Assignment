@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" />
+    <style>
+        div{
+            text-align:center;width:40%;margin:auto;border:2px solid blue;
+            padding:5px;
+        }
+        label,.c{
+            color:brown;
+            font-weight: bold;
+        }
+        .c {
+           border: 2px solid brown; 
+        }
+        .x{
+            background-color: white;
+            color:blue;
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center" >CRUD OPERATION</h1>
+    <div >
+    <form>
+        <label>Employee Number:</label>
+        <input class="c" type="text" name="number">
+        <label>Employee Name:</label>
+        <input class="c" type="text" name="number">
+        <label>Employee Role:</label>
+        <input  class="c" type="text" name="number"><BR>
+        <input type="button" class="x button" value="CREATE">
+        <input type="button" class="x button" value="READ">
+        <input type="button" class="x button" value="UPDATE">
+        <input type="button" class="x button" value="DELETE">
+        <br>
+        <input type="submit"class="x button expanded" value="SUBMIT TO SERVER" >
+    </form>
+
+    </div>
+</body>
+</html>
