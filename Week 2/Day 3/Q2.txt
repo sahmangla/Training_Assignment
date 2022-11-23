@@ -1,0 +1,8 @@
+2. What is web crawler and backlink in SEO?
+The web crawler is a computer program or automated script that crawls through the World Wide Web in a 
+predefined and methodical manner to collect data. The web crawler tool pulls together details about each page: titles, 
+images, keywords, other linked pages, etc. It automatically maps the web to search documents, websites, RSS feeds, and email 
+addresses. It then stores and indexes this data.
+A backlink is a kind of Internet manipulator. It links one particular site with other external websites which contain links 
+to this site. In other words, when you visit external sites they will lead you to that particular site. Backlinks are used 
+for SEO purposes to optimize a website in a proper way.

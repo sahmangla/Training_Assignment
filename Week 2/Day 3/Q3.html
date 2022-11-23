@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    li{
+    
+        float:left;
+        display:inline-block;
+        margin:5px;
+        padding:10px 50px;
+        width:auto;
+        text-align: center;
+        border:1px solid black;
+        background-color: blue;
+        }
+      li>a{
+        color:white;
+        }
+        li:hover{
+            font-size: 20px;
+            background-color: blueviolet;
+        }
+    article{
+        border:1px double black;
+        padding:5px;
+        margin:5px; 
+    }
+    article:hover{
+        background-color: antiquewhite;
+        cursor:pointer;
+    }
+    a{
+        text-decoration: none;
+    }
+    .header{
+        float:left;
+    }
+    
+</style>
+<body>
+    <div itemscope>
+    <h1 align="center" style="font-size:40px">
+        THis is a Website
+    </h1>
+    <div>
+        <img  class ="header" itemprop="logo" src="https://th.bing.com/th/id/OIP.z0xMH8RTNpuLFGQppTqe4QHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7" width="50px" height="50px">
+        <nav class="header">
+            <ul>
+                <li type="none"><a href="">Home</a></li>
+                <li type="none"><a href="#About">About</a></li>
+                <li type="none"><a href="">Contact</a></li>
+                <li type="none"><a href="">Developer</a></li>
+                <li type="none"><a href="">Method</a></li>  
+            </ul>
+            <br>
+        </nav>
+    </div>
+    <div style="clear:left"></div>
+    <br>
+    <br>
+    <section>
+        <article>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta sapiente voluptates veritatis excepturi natus dolores deleniti ipsum quis ratione perferendis?</p>
+            <a href="https://www.google.com" style="font-weight: bold;" itemprop="Url">Read More</a>
+            </article>
+        <article>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta sapiente voluptates veritatis excepturi natus dolores deleniti ipsum quis ratione perferendis?</p>
+            <p>Lorem ipsum dolor <span itemprop="Place" style="font-weight: bold;">Shillong</span> sit, amet consectetur adipisicing elit. Soluta sapiente voluptates veritatis excepturi natus dolores deleniti ipsum quis ratione perferendis?</p>
+            <p>Lorem ipsum dolor sit, amet <span itemprop="Restaurant" style="font-weight: bold;">Sindhi Sweets</span> consectetur adipisicing elit. Soluta sapiente voluptates veritatis excepturi natus dolores deleniti ipsum quis ratione perferendis?</p>
+        </article>
+        <article>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta sapiente voluptates veritatis excepturi natus dolores deleniti ipsum quis ratione perferendis?</p>
+            <p>Lorem <span itemprop="Person" style="font-weight: bold;">Samridhi</span> ipsum dolor sit, amet consectetur <span itemprop="Place" style="font-weight: bold;">Chandigarh</span> adipisicing elit. Soluta sapiente voluptates veritatis excepturi natus dolores deleniti ipsum quis ratione perferendis?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span itemprop="Recipe" style="font-weight: bold;">Lassi</span> Soluta sapiente voluptates veritatis excepturi natus dolores deleniti ipsum quis ratione perferendis?</p>
+        </article>
+        <article>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta sapiente voluptates veritatis excepturi natus dolores deleniti ipsum quis ratione perferendis?</p>
+            <p>Lorem ipsum dolor sit, <span itemprop="Place" style="font-weight: bold;">Himachal</span> amet consectetur adipisicing elit. Soluta sapiente voluptates veritatis excepturi natus dolores deleniti ipsum quis ratione perferendis?</p>
+            <p>Lorem ipsum dolor  <a href="https://www.twitter.com" style="font-weight: bold;" itemprop="Url">Twitter</a> sit, amet consectetur adipisicing elit. Soluta sapiente voluptates veritatis excepturi natus dolores deleniti ipsum quis ratione perferendis?</p>
+        </article>
+        <article>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta sapiente voluptates veritatis excepturi natus dolores deleniti ipsum quis ratione perferendis?</p>
+            <p>Lorem  <span itemprop="Movie" style="font-weight: bold;">Singham</span> ipsum dolor sit, amet consectetur <span itemprop="Person" style="font-weight: bold;">Hemant Soni</span> adipisicing elit. Soluta sapiente voluptates veritatis excepturi natus dolores deleniti ipsum quis ratione perferendis?</p>
+            <p>Lorem ipsum dolor sit, amet <span itemprop="Restaurant" style="font-weight: bold;">Khalsa Dhaba</span> consectetur adipisicing elit.  <a href="https://www.google.com" style="font-weight: bold;"itemprop="Url">Facebook</a> Soluta sapiente voluptates veritatis excepturi natus dolores deleniti ipsum quis ratione perferendis?</p>
+        </article>
+        <article>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta sapiente voluptates veritatis excepturi natus dolores deleniti ipsum quis ratione perferendis?</p>
+            <p>Lorem ipsum dolor sit, <span itemprop="Movie" style="font-weight: bold;">Shivaay</span> amet consectetur adipisicing elit. Soluta sapiente voluptates veritatis excepturi natus dolores deleniti ipsum quis ratione perferendis?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta sapiente <span itemprop="Recipe"  style="font-weight: bold;">Jalebi</span> voluptates veritatis excepturi natus dolores deleniti ipsum quis ratione perferendis?</p>
+        </article>
+        <article id="About">
+            <ename itemprop="Person"  style="font-weight: bold;">Sahil Mangla</ename>
+            <p>Address<br>Phone no.</p>
+        </article>
+    </section>
+    <footer style="background-color:brown;color:white;text-align:center;height:100px">
+        <br>
+        <br>
+        <p>this is &copy; copyright on your west</p>
+    </footer>
+</div>
+</body>
+</html>
