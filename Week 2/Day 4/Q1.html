@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+         a:hover{
+            background-color: green;
+            color:yellow !important;
+            font-size: 20px;
+        }
+        a{
+            
+            text-decoration: none;
+            float:left;
+            display: inline-block;
+            padding: 10px 30px;
+            width:auto;
+            border-right:1px solid black;
+            margin:10px;
+        
+        }
+        #main{
+            width:30%;
+            margin:auto;
+            padding:20px 10px;
+            border:1px solid black;
+            line-height: 1.6;
+            background-color: whitesmoke;
+           
+        }
+        input{
+            width:100%;
+        }
+        .defend{
+            width: auto;
+            padding:5px 20px;
+            margin:10px;
+            background-color: blue;
+            color:white;
+            cursor:pointer;
+        }
+        .defend:hover{
+            background-color: aquamarine;
+            color:brown;
+        }
+        #button{
+            text-align: center;
+        }
+        label{
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+    <img style="float:left" src="https://www.bing.com/th?id=OIP.xstXOWBclGc0dfXZdHZzgAHaFC&w=150&h=102&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" width="50px" height="50px">
+    <div style="width:90%;float:left;text-align: center;">
+    <h1 align="center">LOCAL STORAGE USAGE</h1>
+    </div>
+    <div style="clear:left"></div>
+    <hr>
+    
+        
+        <a href="Q2.html" >HOME</a>
+        <a href="https://www.google.com">PRODUCT</a>
+        <a href="https://www.google.com">CART</a>
+        <a href="Q1.html" style="background-color:pink;font-size:20px">SIGN UP</a> 
+
+    
+    <div style="clear:left"></div>
+    </div>
+    <hr>
+    <div id="main">
+        <h1 align="center">Sign Up</h1> 
+        
+        <label>Customer Name : </label>
+        <input id="name1" type="textbox" >
+        <br>
+        <br>
+        <label>Joined Date : </label>
+        <input id="date1" type="date">
+        <br>
+        <br>
+        <label>Favourite Color : </label>
+        <input id="color1" type="color">
+        <br>
+        <br>
+        <div id="button">
+        <input class="defend" type="button" value="SIGN UP" onclick="getdetails()">
+        <input class="defend" type="button" value="REMOVE ACCOUNT" onclick="getremove()">
+    </div></div> 
+    <script>
+        function getdetails()
+        {
+        var get_name=document.getElementById("name1");
+        var get_date=document.getElementById("date1");
+        var get_color=document.getElementById("color1");
+        var obj={};
+        obj.name=get_name.value;
+        obj.date=get_date.value;
+        obj.color=get_color.value;
+        var string=JSON.stringify(obj);
+        localStorage.setItem("uid",string);
+        alert("SIGNED UP SUCCESFULLY");
+        window.location.replace("Q2.html");
+       
+        }
+        function getremove()
+        {
+            localStorage.removeItem("uid");
+            alert("Account deleted");
+        }
+        
+       </script>
+</body>
+</html>

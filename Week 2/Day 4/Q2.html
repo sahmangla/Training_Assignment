@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+          a{
+            text-decoration: none;
+            float:left;
+            display: inline-block;
+            padding: 10px 30px;
+            width:auto;
+            border-right:1px solid black;
+            margin:10px;
+        }
+        a:hover{
+            background-color: green;
+            color:WHITE !important;
+            font-size: 20px;
+        }
+     
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img style="float:left" src="https://www.bing.com/th?id=OIP.xstXOWBclGc0dfXZdHZzgAHaFC&w=150&h=102&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" width="50px" height="50px">
+        <div style="width:90%;float:left;text-align: center;">
+        <h1 align="center">LOCAL STORAGE USAGE</h1>
+        </div>
+        <div style="clear:left"></div>
+        <hr>
+        <a href="Q2.html" style="font-size:20px;background-color:pink">HOME</a>
+        <a href="https://www.google.com">PRODUCT</a>
+        <a href="https://www.google.com">CART</a>
+        <a href="Q1.html" >SIGN UP</a> 
+
+        <div style="clear:left"></div>
+        </div>
+        <hr>
+            <h1 id="getting_name"></h1>
+            
+           
+            <br>
+            <p style="text-align:center; font-size: 20px; font-weight: bold;" id="joined_details"> </p>
+        
+        <script>
+           
+    
+            var join=document.getElementById("joined_details");
+            var heading=document.getElementById("getting_name");
+            
+           
+            var customer=localStorage.getItem("uid");
+            var x=JSON.parse(customer);
+            if(customer==undefined)
+            {
+                heading.innerHTML= "Welcome To Guest User";
+                join.innerHTML="JOINED DETAILS : "+ "N/A";
+            }
+            else{
+                heading.innerHTML="Welcome "+ x.name;   
+                document.body.style.backgroundColor=x.color;
+                join.innerHTML="Joined date : " + x.date;
+            }
+        
+
+        </script>
+</body>
+</html>
