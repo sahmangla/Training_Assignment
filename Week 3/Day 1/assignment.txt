@@ -1,0 +1,30 @@
+1. How to add or remove css classes to html elements using JavaScript?
+var el = document.getElementById("div1");
+
+Adding Single class
+el.classList.add("my-class");
+
+Adding Multiple calsses
+el.classList.add("my-class", "my-another-class");
+
+Remove Class
+
+var el = document.getElementById("divID");
+el.classList.remove("my-class");
+
+
+2. What is CDN? What are the advantages of using CDN urls?
+A Content Delivery Network (CDN) is a collection of computers that keep data copies at several network nodes. A well-designed 
+and adequately executed CDN increases data access by increasing bandwidth and reducing access latency. Web objects, apps, 
+database queries, downloadable data objects, and video streams are all examples of CDN content.
+
+Advantages of Using a CDN:-
+a. Increasing the speed with which a website's pages load
+b. Lowering the cost of bandwidth
+c. Increasing the availability and redundancy of content
+d. Increasing the safety of your website
+
+
+3:  How to align justify using Bootstrap?
+Note that we don’t provide utility classes for justified text. While, aesthetically, justified text might look more appealing, 
+it does make word-spacing more random and therefore harder to read.

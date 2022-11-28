@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"  rel="stylesheet"  />
+</head>
+<body class="m-2">
+    <div class="p-2 container text-bg-success">
+        <p class="display-3 text-light text-center">Images Styles in Bootstrap</p>
+    </div>
+    <div class="mt-4 p-2 container text-bg-light">
+        <span class="h4">Choose Image Style: </span> 
+        <select class="h4 ms-4 mb-5" id="work" onchange="f1()">
+            <option value="null" hidden></option>
+            <option value="rounded">rounded</option>
+            <option value="rounded-circle">rounded-circle</option>
+            <option value="img-thumbnail">img-thumbnail</option>
+        </select>
+        <br>
+        <img id="image" class="w-40" src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=600">
+    </div>
+    <script>
+        localStorage.removeItem("uid");
+        function f1()
+        {
+        var selectobj=document.getElementById("work");
+        var answer=selectobj.value;
+        var imgObj=document.getElementById("image");
+        var s=localStorage.getItem("uid");
+        if(s!=undefined)
+        {
+            imgObj.classList.remove(s);
+        }
+        imgObj.classList.add(answer);
+        localStorage.setItem("uid",answer);
+        }
+        
+    </script>
+</body>
+</html>
