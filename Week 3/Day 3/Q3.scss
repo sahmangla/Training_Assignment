@@ -1,0 +1,23 @@
+
+
+$font:10px;
+@for $value from 1 to 7{
+    .ts#{$value}
+    {
+        font-size: $font*$value;
+        @if($value<4)
+        {
+            border:1px solid red;
+            color:red;
+        }
+        @else{
+            border:1px solid green;
+            color:green;
+        }
+    }
+}
+.ts{
+    text-align:center;
+    margin:10px;
+    padding:10px;
+}

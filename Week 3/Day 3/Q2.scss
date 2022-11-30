@@ -1,0 +1,45 @@
+$themeshape:rectangle;
+$themecolor:blue;
+@mixin theme1($themeshape:rectangle,$themecolor:blue)
+{
+    @if($themeshape==circle)
+    {   
+        $themecolor:green;
+        background-color:$themecolor;
+        width:150px;
+        height: 150px;
+        font-size: 20px;
+        border-radius:50%;
+        text-align:center;
+        color:white;
+    }
+    @if($themeshape==rectangle)
+    {   
+        
+        background-color:$themecolor;
+        width:300px;
+        height: 150px;
+        font-size: 20px;
+        text-align:center;
+        color:white;
+    }
+    @if($themeshape==square)
+    {   
+        $themecolor:red;
+        background-color:$themecolor;
+        width:150px;
+        height:150px;
+        font-size: 20px;
+        text-align:center;
+        color:white;
+    }
+}
+.primary{
+    @include theme1;
+}
+.secondary{
+    @include theme1(circle);
+}
+.tertiary{
+    @include theme1(square);
+}

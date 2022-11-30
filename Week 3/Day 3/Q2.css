@@ -1,0 +1,27 @@
+.primary {
+  background-color: blue;
+  width: 300px;
+  height: 150px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.secondary {
+  background-color: green;
+  width: 150px;
+  height: 150px;
+  font-size: 20px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+}
+
+.tertiary {
+  background-color: red;
+  width: 150px;
+  height: 150px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}/*# sourceMappingURL=Q2.css.map */
