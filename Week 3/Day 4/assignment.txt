@@ -1,0 +1,17 @@
+1. What is container class in Bootstrap? When do we use container-fluid class?
+Our default .container class is a responsive, fixed-width container, meaning its max-width changes at each breakpoint.
+For example, .container-sm is 100% wide to start until the sm breakpoint is reached, where it will scale up with md, lg, xl, 
+and xxl.
+Use .container-fluid for a full width container, spanning the entire width of the viewport. 100% width at each breakpoints.
+
+
+2. What is CDN? What are the advantages of using CDN urls?
+A Content Delivery Network (CDN) is a collection of computers that keep data copies at several network nodes. A well-designed 
+and adequately executed CDN increases data access by increasing bandwidth and reducing access latency. Web objects, apps, 
+database queries, downloadable data objects, and video streams are all examples of CDN content.
+
+Advantages of Using a CDN:-
+a. Increasing the speed with which a website's pages load
+b. Lowering the cost of bandwidth
+c. Increasing the availability and redundancy of content
+d. Increasing the safety of your website

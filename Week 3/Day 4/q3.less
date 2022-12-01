@@ -1,0 +1,61 @@
+@import 'seperate';
+@color:black;
+@rcolor:red;
+@size:200px;
+a{
+    color:@color;
+    text-decoration: none;
+    padding:15px 50px;
+    background-color: yellow;
+    &:hover{
+        text-decoration: underline;
+        font-weight: bolder;
+        color:@color;
+    }
+}
+.mixin(@shape) when (@shape="square")
+{
+    width:@size;
+    height:@size;
+    background-color:@rcolor;
+    color:white;
+    padding:10px;
+    margin:10px;
+}
+.mixin(@shape) when (@shape="circle")
+{
+    width:@size;
+    height:@size;
+    background-color:green;
+    color:white;
+    border-radius: 50%;
+    padding:10px;
+    margin:10px;
+}
+
+.primary{
+    .mixin("square")
+}
+.secondary{
+    .mixin("circle")
+}
+
+.btn()
+{
+    padding:10px 100px;
+    width:500px;
+    height:50px;
+    margin:10px;
+}
+.fancybutton()
+{
+    background-color:@color;
+    color:white;
+    font-size:22px;
+    border-radius:50px;
+
+}
+.ss{
+    .btn();
+    .fancybutton();
+}
